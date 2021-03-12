@@ -15,6 +15,12 @@
 		A0957CBC25FA5BEA005993AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0957CBA25FA5BEA005993AB /* LaunchScreen.storyboard */; };
 		A0957CC725FA5BEB005993AB /* RandomStudentGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0957CC625FA5BEB005993AB /* RandomStudentGeneratorTests.swift */; };
 		A0957CD225FA5BEB005993AB /* RandomStudentGeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0957CD125FA5BEB005993AB /* RandomStudentGeneratorUITests.swift */; };
+		A0957CE925FA7398005993AB /* NewStudentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0957CE825FA7398005993AB /* NewStudentListView.swift */; };
+		A0957CF125FA851D005993AB /* ShuffledListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0957CF025FA851D005993AB /* ShuffledListView.swift */; };
+		A0957CF625FAD00D005993AB /* GroupSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0957CF525FAD00D005993AB /* GroupSelectorView.swift */; };
+		A0957CFB25FAD159005993AB /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0957CFA25FAD159005993AB /* Student.swift */; };
+		A0957D0025FAD201005993AB /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0957CFF25FAD201005993AB /* Group.swift */; };
+		A0957D1425FB29BA005993AB /* GroupsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0957D1325FB29BA005993AB /* GroupsStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		A0957CCD25FA5BEB005993AB /* RandomStudentGeneratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomStudentGeneratorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0957CD125FA5BEB005993AB /* RandomStudentGeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomStudentGeneratorUITests.swift; sourceTree = "<group>"; };
 		A0957CD325FA5BEB005993AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0957CE825FA7398005993AB /* NewStudentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStudentListView.swift; sourceTree = "<group>"; };
+		A0957CF025FA851D005993AB /* ShuffledListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuffledListView.swift; sourceTree = "<group>"; };
+		A0957CF525FAD00D005993AB /* GroupSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupSelectorView.swift; sourceTree = "<group>"; };
+		A0957CFA25FAD159005993AB /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		A0957CFF25FAD201005993AB /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		A0957D1325FB29BA005993AB /* GroupsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +114,12 @@
 				A0957CAF25FA5BEA005993AB /* AppDelegate.swift */,
 				A0957CB125FA5BEA005993AB /* SceneDelegate.swift */,
 				A0957CB325FA5BEA005993AB /* ContentView.swift */,
+				A0957CF525FAD00D005993AB /* GroupSelectorView.swift */,
+				A0957D1325FB29BA005993AB /* GroupsStorage.swift */,
+				A0957CFA25FAD159005993AB /* Student.swift */,
+				A0957CFF25FAD201005993AB /* Group.swift */,
+				A0957CF025FA851D005993AB /* ShuffledListView.swift */,
+				A0957CE825FA7398005993AB /* NewStudentListView.swift */,
 				A0957CB525FA5BEA005993AB /* Assets.xcassets */,
 				A0957CBA25FA5BEA005993AB /* LaunchScreen.storyboard */,
 				A0957CBD25FA5BEA005993AB /* Info.plist */,
@@ -269,6 +287,12 @@
 				A0957CB025FA5BEA005993AB /* AppDelegate.swift in Sources */,
 				A0957CB225FA5BEA005993AB /* SceneDelegate.swift in Sources */,
 				A0957CB425FA5BEA005993AB /* ContentView.swift in Sources */,
+				A0957D0025FAD201005993AB /* Group.swift in Sources */,
+				A0957CF125FA851D005993AB /* ShuffledListView.swift in Sources */,
+				A0957CF625FAD00D005993AB /* GroupSelectorView.swift in Sources */,
+				A0957CFB25FAD159005993AB /* Student.swift in Sources */,
+				A0957CE925FA7398005993AB /* NewStudentListView.swift in Sources */,
+				A0957D1425FB29BA005993AB /* GroupsStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
