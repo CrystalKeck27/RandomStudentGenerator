@@ -24,7 +24,7 @@ struct GroupSelectorView: View {
         NavigationView {
             List {
                 ForEach(groups, id: \.id) { group in
-                    NavigationLink(destination: ShuffledListView(students: group.students)){
+                    NavigationLink(destination: ShuffledListView(group: group)){
                         Text(group.name)
                     }
                 }
@@ -39,6 +39,7 @@ struct GroupSelectorView: View {
                     update();
                 })
             }
+            .navigationBarTitle("Classes: ")
             .navigationBarItems(leading: EditButton(), trailing: NavigationLink(destination: NewStudentListView()) { Image(systemName: "plus")
             })
             .environment(\.editMode, $editMode)

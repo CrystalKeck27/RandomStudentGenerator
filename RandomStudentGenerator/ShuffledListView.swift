@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct ShuffledListView: View {
-    @State public var students: Array<Student>;
+    @State public var group: Group;
     @State private var currentIndex = 0;
     
     var body: some View {
         VStack {
             List {
-                ForEach(0 ..< students.count) { index in
-                    let student = students[index];
+                ForEach(0 ..< group.students.count) { index in
+                    let student = group.students[index];
                     VStack {
                         Text(student.name)
                     }.listRowBackground(currentIndex == index ? Color.blue : Color.white)
@@ -23,7 +23,7 @@ struct ShuffledListView: View {
             }
             HStack{
                 Button(action: {
-                    students.shuffle();
+                    group.students.shuffle();
                 }) {
                     Text("Shuffle")
                 }.frame(maxWidth: .infinity)
@@ -35,17 +35,17 @@ struct ShuffledListView: View {
                 }.frame(maxWidth: .infinity)
                 
                 Button(action: {
-                    currentIndex += currentIndex < students.count - 1 ? 1 : 0;
+                    currentIndex += currentIndex < group.students.count - 1 ? 1 : 0;
                 }) {
                     Text("Next")
                 }.frame(maxWidth: .infinity)
             }
-        }
+        }.navigationBarTitle(group.name)
     }
 }
 
 struct ShuffledListView_Previews: PreviewProvider {
     static var previews: some View {
-        ShuffledListView(students: sampleGroup.students)
+        ShuffledListView(group: sampleGroup)
     }
 }
